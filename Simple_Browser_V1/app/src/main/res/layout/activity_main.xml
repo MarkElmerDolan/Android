@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/imagebutton"
+        android:src="@drawable/go_icon3"
+        android:background="@drawable/go_bg"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/edittext"
+        android:layout_toRightOf="@+id/imagebutton"
+        android:text="@string/enter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/border"/>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview"
+        android:layout_below="@+id/edittext">
+
+    </WebView>
+
+
+</RelativeLayout>
